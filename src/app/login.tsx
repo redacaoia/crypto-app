@@ -1,9 +1,9 @@
 import { Text, View } from 'react-native';
 
-export default function Profile() {
+export default function Login() {
   return (
     <View className="flex-1  ">
-      <Text> profile</Text>
+      <Text>Login</Text>
     </View>
   );
 }

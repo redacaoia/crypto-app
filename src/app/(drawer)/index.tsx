@@ -1,15 +1,15 @@
+import { Container } from '@/components/Container';
+import { ScreenContent } from '@/components/ScreenContent';
 import { Stack } from 'expo-router';
-import { StyleSheet, View } from 'react-native';
-
-import { Container } from '~/components/Container';
-import { ScreenContent } from '~/components/ScreenContent';
+import { ActivityIndicator } from 'react-native';
 
 export default function Home() {
   return (
     <>
       <Stack.Screen options={{ title: 'Home' }} />
       <Container>
-        <ScreenContent path="app/(drawer)/(tabs)/index.tsx" title="Home" />
+        <ActivityIndicator size="large" color="black" />
+        {/*   <ScreenContent path="app/(drawer)/(tabs)/index.tsx" title="Home" /> */}
       </Container>
     </>
   );
